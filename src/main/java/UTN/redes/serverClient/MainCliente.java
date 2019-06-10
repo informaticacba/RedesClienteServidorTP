@@ -1,8 +1,16 @@
 package UTN.redes.serverClient;
 
+import UTN.redes.serverClient.models.Cliente;
+
+import java.io.IOException;
+
 public class MainCliente {
-    public static void main( String[] args )
+
+    public static void main(String[] args) throws IOException
     {
-        System.out.println( "Hello World!" );
+        Cliente cli = new Cliente(); //Se crea el cliente
+
+        System.out.println("Iniciando cliente\n");
+        cli.startClient(); //Se inicia el cliente
     }
 }

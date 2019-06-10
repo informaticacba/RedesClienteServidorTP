@@ -23,7 +23,7 @@ public class Servidor extends Connect {
             salidaCliente = new DataOutputStream(cs.getOutputStream());
 
             //Se le envía un mensaje al cliente usando su flujo de salida
-            salidaCliente.writeUTF("Petición recibida y aceptada");
+            salidaCliente.writeUTF("Peticion recibida y aceptada");
 
             //Se obtiene el flujo entrante desde el cliente
             BufferedReader entrada = new BufferedReader(new InputStreamReader(cs.getInputStream()));
